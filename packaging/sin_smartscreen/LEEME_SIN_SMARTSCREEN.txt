@@ -1,0 +1,19 @@
+Distribuidora Damian - paquete sin ejecutable propio
+
+Este paquete evita el aviso de SmartScreen del .exe generado, porque abre la app desde Python instalado en Windows.
+
+Primer uso:
+1. Descomprimir el ZIP completo.
+2. Abrir "Instalar dependencias.cmd".
+3. Abrir "Abrir Distribuidora Damian.cmd".
+4. Opcional: abrir "Crear acceso directo.cmd" para dejar el acceso directo en el Escritorio.
+
+Requisitos:
+- Windows 10/11.
+- Python 3.12 o superior. Si no esta instalado, el script intenta instalarlo con winget.
+- Internet solo para la primera instalacion de dependencias.
+
+Datos incluidos:
+- 314 productos.
+- 0 boletas iniciales.
+- Proxima boleta: BD-000501.
