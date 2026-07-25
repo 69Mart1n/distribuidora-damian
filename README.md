@@ -40,11 +40,30 @@ Con el entorno incluido en Codex:
 
 La aplicación crea un respaldo diario al iniciar. Las importaciones, cambios masivos y restauraciones también generan una copia previa.
 
+## Instalar en Windows
+
+Descarga `Instalador_Distribuidora_Damian.msi` desde la sección Releases del repositorio y ábrelo. El instalador incluye Python, Qt y todas las dependencias, crea accesos directos en el Escritorio y el menú Inicio, y no necesita permisos de administrador.
+
+En la versión instalada, la base y los archivos del negocio se guardan en:
+
+```text
+%LOCALAPPDATA%\Distribuidora Damian
+```
+
+Los datos no están dentro de la carpeta del programa, por lo que se conservan al actualizar o reinstalar.
+
+## Construir instaladores
+
+```powershell
+.\packaging\build_installer.ps1
+python .\packaging\build_msi.py
+```
+
+El primer comando prepara el runtime oficial de Python embebido y genera el instalador EXE. El segundo genera el MSI compatible con Windows Installer.
+
 ## Validación
 
 ```powershell
 python -m ruff check app tests
 python -m pytest -q
 ```
-
-El instalador y el archivo `.exe` no forman parte de esta entrega.
