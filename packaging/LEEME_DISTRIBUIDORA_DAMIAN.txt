@@ -1,0 +1,16 @@
+Distribuidora Damian - App de escritorio portable
+
+Para usar:
+1. Descomprimir el ZIP completo.
+2. Abrir "Distribuidora Damian.exe".
+3. No mover el .exe solo: debe quedar junto a las carpetas data, assets, exports, backups y logs.
+
+Datos incluidos:
+- 314 productos cargados.
+- Base SQLite local en data/distribuidora.db.
+- Numeracion inicial de boletas: BD-000501.
+- Exportaciones y respaldos quedan dentro de la carpeta de la app.
+
+Recomendado:
+- Guardar la carpeta completa en Documentos o Escritorio.
+- Hacer respaldos desde la seccion Respaldos antes de cambios grandes.
