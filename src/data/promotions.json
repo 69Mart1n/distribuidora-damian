@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Promo Vittamax",
+    "minimumKg": 60.0,
+    "discountPercentage": 5.0
+  },
+  {
+    "name": "Promo Vittamax",
+    "minimumKg": 200.0,
+    "discountPercentage": 5.0
+  },
+  {
+    "name": "Promo M-Line",
+    "minimumKg": 60.0,
+    "discountPercentage": 2.5
+  },
+  {
+    "name": "Promo M-Line",
+    "minimumKg": 200.0,
+    "discountPercentage": 5.0
+  }
+]

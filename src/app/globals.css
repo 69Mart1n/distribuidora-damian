@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f6f2;
+  --foreground: #1c1917;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: #bbf7d0;
+  color: #052e16;
+}
+
+.print-receipt-root {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  html,
+  body {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0;
+    background: white;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  body > *:not(.print-receipt-root) {
+    display: none !important;
+  }
+
+  .print-receipt-root {
+    display: block !important;
+    width: 210mm;
+    min-height: 297mm;
+    padding: 9mm 11mm;
+    background: white;
+  }
+
+  .print-receipt-root .receipt-document {
+    width: 100%;
+    padding: 0;
+    font-size: 11px;
+  }
+
+  .print-receipt-root header,
+  .print-receipt-root tr,
+  .print-receipt-root footer {
+    break-inside: avoid;
+  }
+
+  .print-receipt-root table,
+  .print-receipt-root th,
+  .print-receipt-root td {
+    border-color: #78716c;
+  }
+}
